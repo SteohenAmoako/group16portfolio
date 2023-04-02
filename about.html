@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Dr Moore</title>
+</head>
+<style>
+ 
+    .arrow-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -20px; /* half of the arrow's width */
+        width: 40px;
+        height: 40px;
+        border-style: solid;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        animation: blink 1s ease-in-out infinite;
+    }
+
+    .arrow-down::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+</style>
+<body>    
+    <div id="header2" >
+        <div class="container">
+            <nav>
+              <p style="font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; color: #ff004f ;">CodeLink</p>
+
+                <img src="" class="logo">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="research.html">Research</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header2-text">
+            
+                 <h1 style="color:white">Dr. Stephen<span> Moore</span><br></h1>
+            </div>
+        </div>
+        <p id="demo" style="font-size: x-large; color:antiquewhite"></p>
+        <div id="about " style="top: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/image 2.jpg" >
+                    </div>
+                    <div class="about-col-2" style="color:white">
+                        <h1 class="sub-title" style="color:white">About Stephen </h1>
+                        <p >Stephen Edward Moore is a Computational 
+                            Science and Engineering lecturer at the 
+                            University of Cape Coast, trained in numerical 
+                            analysis in Austria. He worked in several engineering companies 
+                            and academic institutions in Austria before 
+                            returning to Ghana to teach at the university.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('basicinfo')">Basic Info</p>
+                                <p class="tab-links " onclick="opentab('skills')">Award</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Eduication</p>
+                            </div>
+                            <div class="arrow-down"></div>
+                            <div class="tab-contents active-tab" id="basicinfo" >
+                                <ul>
+                                    <li> <span>Born Saltpond.</span><br>Ghana</li>
+                                    <li> <span> SSSCE St. Augustine's College </span><br>Cape Coast, Ghana.</li>
+                                    <li> <span> BSc. Mathematics (Distinction) </span><br> Kwame Nkrumah University of Science and Technology, Ghana.</li>
+                                    <li> <span>MSc. Computational Mathematics, Technical University of Kaiserslautern.</span><br>Germany</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="skills" >
+                                <ul>
+                                    <li> <span>Advanced Modeling of Flows in Cities around Guinea</span><br>context of strong Urbanization and Climate</li>
+                                    <li> <span>Individual Research Grant</span><br> By The World Academy of Science (TWAS)</li>
+                                    <li> <span>Erasmus Mundus Scholarship</span><br>By European Union </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li> <span>06.2007 - 06.2008</span><br>Teaching Assistant, Dept. of Mathematics</li>
+                                    <li> <span>03.2010 - 09.2011</span><br>Project employee</li>
+                                    <li> <span>02.2017</span><br> Guest Research Scientist </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li> <span>Johannes Kepler University, Linz, Austria, 2017</span><br>Doctor of Philosophy (Ph.D.) in Computational Science and Engineering</li>
+                                    <li> <span>Johannes Kepler University, Linz, Austria, 2011</span><br> Master of Science (M.Sc., MSc, M.Sci., M.Si., Sc.M., M.S., MSHS, MS, Mag., Mg., Mgr, S.M., or SM) in Industrial Mathematics </li>
+                                    <li> <span>Kwame Nkrumah University of Science and Technology, Kumasi, Ghana, 2007</span><br> Bachelor of Science (BSc) in Mathematics</li>
+                                
+                                </ul>
+                            </div>
+                            <button class="scroll-to-footer">More</button> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-----about------->
+    <footer >
+        <h2>Educational Background</h2>
+        <table >
+          <thead>
+            <tr>
+              <th>Education</th>
+              <th>Institution</th>
+              <th>Country</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SSSCE</td>
+              <td>St. Augustine's College</td>
+              <td>Ghana</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>BSc. Mathematics (Distinction)</td>
+              <td>Kwame Nkrumah University of Science and Technology</td>
+              <td>Ghana</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>MSc. Computational Mathematics</td>
+              <td>Technical University of Kaiserslautern</td>
+              <td>Germany</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>MSc. Industrial Mathematics (Distinction)</td>
+              <td>Johannes Kepler University</td>
+              <td>Austria</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>PhD Computational Mathematics</td>
+              <td>Johannes Kepler University</td>
+              <td>Austria</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <thead style="border-radius: 0%;">
+            <tr>
+              <th>Period</th>
+              <th>Position/Title</th>
+              <th>Organization/Department</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06.2007 - 06.2008</td>
+              <td>Teaching Assistant</td>
+              <td>Dept. of Mathematics</td>
+              <td>KNUST, Kumasi, Ghana</td>
+            </tr>
+            <tr>
+              <td>03.2010 - 09.2011</td>
+              <td>Project employee</td>
+              <td>"Doktoratskollegs" Computational Mathematics</td>
+              <td>JKU, Linz, Austria</td>
+            </tr>
+            <tr>
+              <td>09.2012 - 02.2016</td>
+              <td>Research Scientist</td>
+              <td>FWF NRN Project "Geometry+Simulation"</td>
+              <td>Linz, Austria</td>
+            </tr>
+            <tr>
+              <td>03.2013 - 04.2017</td>
+              <td>Associated Doctorate</td>
+              <td>"Doktoratskollegs" Project DK4</td>
+              <td>Linz, Austria</td>
+            </tr>
+            <tr>
+              <td>09.2016 -</td>
+              <td>Guest Research Scientist</td>
+              <td>National Institute of Mathematical Science</td>
+              <td>Kumasi, Ghana</td>
+            </tr>
+            <tr>
+              <td>03.2016 - 12.2016</td>
+              <td>Research Engineer</td>
+              <td>Prozess Optimal Engineering</td>
+              <td>Ottensheim, Austria</td>
+            </tr>
+            <tr>
+              <td>02.2017 -</td>
+              <td>Guest Research Scientist</td>
+              <td>National Institute of Mathematical Science</td>
+              <td>Kumasi, Ghana</td>
+            </tr>
+            <tr>
+              <td>08.2017 - 10.2018</td>
+              <td>Helen Doron English Teacher</td>
+              <td>Helen Doron English</td>
+              <td>Linz, Austria</td>
+            </tr>
+            <tr>
+              <td>09.2017 - 01.2018</td>
+              <td>Product Development Engineer</td>
+              <td>RAG Rohöl-Aufsuchungs Aktiengesellschaft</td>
+              <td>Vienna, Austria</td>
+            </tr>
+            <tr>
+              <td>02.2018 - 01.2019</td>
+              <td>Project Manager &amp; Research Scientist</td>
+              <td>Engineering Software Steyr</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>11.2018 - 07.2021</td>
+              <td>Lecturer</td>
+              <td>Department of Mathematics</td>
+              <td>University of Cape Coast, Ghana</td>
+            </tr>
+            <tr>
+              <td>08.2021 - Present</td>
+              <td>Senior Lecturer</td>
+              <td>Department of Mathematics</td>
+              <td>University of Cape Coast, Ghana</td>
+            </tr>
+        </table>
+        <div style="background-color: rgb(144, 144, 241); margin: 0; padding: 0;">
+          <h2>Academic Achievements</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li>Financial Support Awarded for DD22 Conference, Lugano, Switzerland.</li>
+            <li>European School of Industrial Mathematics Scholarship.</li>
+            <li>Doctoral College Assistantship, Linz, Austria.</li>
+            <li>Institute of Mathematical Sciences Fellowship, Ghana.</li>
+            <li>Individual research grant, The World Academy of Science (TWAS) under the auspices of UNESCO, 2022.</li>
+            <li>Best College Level Researcher, College of Agriculture and Natural Science (CANS), 2019.</li>
+            <li>2019 Young Scientist Award, RUFORUM.</li>
+          </ul> 
+       </div>
+       
+        
+      </footer>
+      
+      
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    var text = "This Page Talks About Dr Moore, His Education, Place Of Birth, Travels, Awards.....And More ";
+    var index = 0;
+    var speed = 50; // adjust the speed of typing here
+    
+    function type() {
+      if (index < text.length) {
+        document.getElementById("demo").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      }
+    }
+    
+    type();
+    const scrollBtn = document.querySelector('.scroll-to-footer');
+    const footer = document.querySelector('footer');
+    
+    scrollBtn.addEventListener('click', () => {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    });
+    
+</script>
+
+
+    
+</body>
+</html> 

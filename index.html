@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<style>
+    /* Style the radio buttons and labels */
+.gender-select input[type="radio"] {
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .gender-select label {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Style the custom radio button */
+  .gender-select label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+  }
+  
+  /* Style the selected custom radio button */
+  .gender-select input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+  }
+  
+  /* Style the gender-select container */
+  .gender-select {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gender-select label:first-of-type {
+    margin-right: 10px;
+  }
+  
+  /* Style the gender-select title */
+  .gender-select label[for="gender"] {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    color: #eeeded;
+  }
+  
+  /* Hover effect for labels */
+  .gender-select label:hover {
+    color: #007bff;
+  }
+  
+  /* Focus effect for labels */
+  .gender-select label:focus {
+    outline: none;
+    color: #007bff;
+  }
+  
+  /* Style the selected radio button */
+  .gender-select input[type="radio"]:checked + label {
+    color: #007bff;
+  }
+  /* Style the checkboxes and labels */
+.subject-select input[type="checkbox"] {
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .subject-select label {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Style the custom checkbox */
+  .subject-select label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #e4e8ec;
+  }
+  
+  /* Style the selected custom checkbox */
+  .subject-select input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+  }
+  
+  /* Style the subject-select container */
+  .subject-select {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subject-select label:first-of-type {
+    margin-right: 10px;
+  }
+  
+  /* Style the subject-select title */
+  .subject-select label[for="subject"] {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    color: #777;
+  }
+  
+  /* Hover effect for labels */
+  .subject-select label:hover {
+    color: #007bff;
+  }
+  
+  /* Focus effect for labels */
+  .subject-select label:focus {
+    outline: none;
+    color: #007bff;
+  }
+  
+  /* Style the selected checkbox */
+  .subject-select input[type="checkbox"]:checked + label {
+    color: #007bff;
+  }
+ 
+    .about-col-1 img {
+        width: 100%; /* Set the width of the image to fill the container */
+        transition: opacity 0.5s ease-in-out; /* Add a smooth transition */
+        
+       
+    }
+
+    .about-col-1 img:hover {
+        opacity: 0.5; /* Reduce the opacity of the image when hovered */
+        content: url(images/rollover.jpeg); /* Change the image to the rollover image */
+        height: 73%;
+    }
+    .arrow-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -20px; /* half of the arrow's width */
+      width: 40px;
+      height: 40px;
+      border-style: solid;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+      animation: blink 1s ease-in-out infinite;
+  }
+  .arrow-down::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+  }
+  @keyframes blink {
+      50% {
+          opacity: 0.5;
+      }
+  }
+
+  
+</style>
+<body>    
+    <div id="header2" style="color: white;">
+        <div class="container">
+            <nav >
+              <p style="font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; color: #ff004f ;">CodeLink</p>
+
+                <img src="" class="logo">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="research.html">Research</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header2-text">
+            
+                 <h1>Dr. Stephen<span> Moore</span><br></h1>
+            </div>
+        </div>
+        <p id="demo" style="font-size: x-large; color:antiquewhite"></p>
+        <div class="arrow-down"></div>
+    </div>
+    <!-----about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image 2.jpg" >
+                </div>
+                <div class="about-col-2" style="color:black">
+                    <h1 class="sub-title">About Stephen </h1>
+                    <p >Stephen Edward Moore is a Computational 
+                        Science and Engineering lecturer at the 
+                        University of Cape Coast, trained in numerical 
+                        analysis in Austria. He worked in several engineering companies 
+                        and academic institutions in Austria before 
+                        returning to Ghana to teach at the university.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Award</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Eduication</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills" >
+                            <ul>
+                                <li> <span>Advanced Modeling of Flows in Cities around Guinea</span><br>context of strong Urbanization and Climate</li>
+                                <li> <span>Individual Research Grant</span><br> By The World Academy of Science (TWAS)</li>
+                                <li> <span>Erasmus Mundus Scholarship</span><br>By European Union </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span>06.2007 - 06.2008</span><br>Teaching Assistant, Dept. of Mathematics</li>
+                                <li> <span>03.2010 - 09.2011</span><br>Project employee</li>
+                                <li> <span>02.2017</span><br> Guest Research Scientist </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>Johannes Kepler University, Linz, Austria, 2017</span><br>Doctor of Philosophy (Ph.D.) in Computational Science and Engineering</li>
+                                <li> <span>Johannes Kepler University, Linz, Austria, 2011</span><br> Master of Science (M.Sc., MSc, M.Sci., M.Si., Sc.M., M.S., MSHS, MS, Mag., Mg., Mgr, S.M., or SM) in Industrial Mathematics </li>
+                                <li> <span>Kwame Nkrumah University of Science and Technology, Kumasi, Ghana, 2007</span><br> Bachelor of Science (BSc) in Mathematics</li>
+                            
+                            </ul>
+                        </div> 
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!------services----->
+<div class="services" >
+    <div class="container">
+        <h1 class="sub-title">Research</h1>
+        <div class="services-list">
+            <div>
+                 <h2>Discontinuous Galerkin Methods</h2>
+                 <p>Unlike traditional Continuous Galerkin 
+                    (cG) methods that are conforming, the 
+                    Discontinuous Galerkin (dG) method works 
+                    over a trial space of functions that are only 
+                    piecewise continuous, and thus often comprise more 
+                    inclusive function spaces than the finite-dimensional 
+                    inner product subspaces utilized in conforming methods. 
+                    dG schemes are complex in their implementations and have 
+                    several applications in hyperbolic problems.</p>
+                    <a href="about.html">Learn More</a>
+
+            </div>
+            <div>
+                <h2>Isogeometric Analysis </h2>
+                <p>As a recently developed computational approach, it offers 
+                    the possibility of integrating finite element analysis 
+                    (FEA) into conventional NURBS-based Computer Aided Design 
+                    (CAD ) tools. Isogeometric Analysis (IGA) allows models to 
+                    be designed, tested and adjusted in one go, using a common 
+                    data set. The fundamental theories have been presented by 
+                    Hughes et al. (2005) and competes strongly with FEM in several 
+                    applications especially because it is an High Order scheme. </p>
+                   <a href="about.html">Learn More</a>
+           </div>
+           <div>
+            <h2>Optimal Control Methods</h2>
+            <p>Here, so far, we have studied and analyzed the optimal control of 
+                Mathematical epidemiology models. By using sensitivity analysis, 
+                we are also able to determine the economic value of each strategy 
+                used in the control. </p>
+               <a href="about.html">Learn More</a>
+       </div>
+            
+        </div>
+    </div>
+</div>
+<div id="portfolio" style="color:white; font-weight:large ">
+    <div class="container">
+        <div class="sub-title">Teaching</div>
+        <div class="work-list"  >
+            <div class="work">
+                <img src="images/mat4.jpg" alt="">
+                <div class="layer">
+                    <h3>MAT 102</h3> <!-----rewrite----->
+                    <p> Analytical Geometry and Calculus</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mat3.jpeg" alt="">
+                <div class="layer">
+                    <h3>MAT 103 : </h3> <!-----rewrite----->
+                    <p>Subsidiary Mathematics</p>
+                    <a href="#">MathsLink will be placed here</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mat5.jpg" alt="">
+                <div class="layer">
+                    <h3>MAT 201 : </h3> <!-----rewrite----->
+                    <p>Introduction to Abstract Algebra</p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-----------contact---------->
+ <div id="contact" style="background-color: black; color:white">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" style="color: #ffffff;"></h1>Developers</h1>
+                <p>PS/ITC/21/0125<div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #2ecc71;">
+                    100%
+                  </div>
+                </div>
+                </p>
+                <p>PS/ITC/21/0124 <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #2ecc71;">
+                    75%
+                  </div>
+                </div>
+                </p>
+                <p>PS/ITC/21/0126  <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2ecc71;">
+                  75%
+                </div> </p>
+                <p>PS/ITC/21/0127  <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2ecc71;">
+                  75%
+                </div> </p>
+                <p>PS/ITC/21/0128  <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2ecc71;">
+                  75%
+                </div> </p>
+                <p>PS/ITC/21/0121  <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2ecc71;">
+                  75%
+                </div> </p>
+                <p>PS/ITC/21/0122<div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2ecc71;">
+                  75%
+                </div> </p>
+                <p></p>
+                <div class="social-icons">
+                    <a href=""><!--An Icon Will Be Placed Here--></a>
+                    <a href=""><!--An Icon Will Be Placed Here--></a>
+                    <a href=""><!--An Icon Will Be Placed Here--></a>
+                </div>
+                
+            </div>
+            <div class="contact-right" >
+                <form action="">
+                    <label for="gender">Gender:</label><br>
+
+                  <div class="gender-select">
+                    <input type="radio" name="gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                  </div><br>
+                  <label for="subject">Subject:</label><br>
+                  <div class="subject-select" >
+                    <input type="checkbox" name="subject" id="Mathematics" value="Mathematics">
+                    <label for="Mathematics" style="color: #ffffff;">Mathematics</label>
+                    <input type="checkbox" name="subject" id="Physics" value="Physics">
+                    <label for="Physics" style="color: #ffffff;">Physics</label>
+                    <input type="checkbox" name="subject" id="Chemistry" value="Chemistry">
+                    <label for="Chemistry" style="color: #ffffff;">Chemistry</label>
+                  </div>
+                  
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" id="" placeholder="example@steve.email.com" required>
+                  <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+              </div>
+              
+              
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Stephen. Group8 Assignment</p>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    var text = "Stephen Edward Moore is a lecture at the University of Cape Coast. His research interest lies in Computational Science and Engineering. He is a trained computational mathematician or numerical analyst from Austria. After, his undergraduate studies in Ghana, He was awarded an European Union scholarship to pursue graduate studies in Industrial Mathematics in Germany and Austria. Whiles in Austria, He worked in various capacities as a research engineer, research scientist, consultant and manager of several engineering companies like Prozess Optimal, Engineering Software Steyr and the Austrian Academy of Science. After 11 years in Europe, He return to Ghana to take up an appointment in the Department of Mathematics at the University of Cape Coast.";
+
+    var index = 0;
+    var speed = 50; // adjust the speed of typing here
+    
+    function type() {
+      if (index < text.length) {
+        document.getElementById("demo").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      }
+    }
+    
+    type();
+    
+</script>
+
+
+    
+</body>
+</html> 

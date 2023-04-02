@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moore's Researchs</title>
+</head>
+<style>
+    .arrow-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -20px; /* half of the arrow's width */
+        width: 40px;
+        height: 40px;
+        border-style: solid;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        animation: blink 1s ease-in-out infinite;
+    }
+    .arrow-down::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.5;
+        }
+    }
+</style>
+<body>    
+    <div id="header2" >
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="research.html">Research</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header2-text">
+            
+                 <h1 style="color:white">Some <span>Researchs </span><br> <p style="font-size: 30px;"> By Dr <span>Moore</span></p> </h1>
+            </div>
+        </div>
+        <p id="demo" style="font-size: x-large; color:antiquewhite"></p>
+        <div class="arrow-down"></div>
+    </div>
+            <!------services----->
+<div class="services" >
+    <div class="container">
+        <h1 class="sub-title">Research</h1>
+        <div class="services-list">
+            <div>
+                 <h2>Discontinuous Galerkin Methods</h2>
+                 <p>Unlike traditional Continuous Galerkin 
+                    (cG) methods that are conforming, the 
+                    Discontinuous Galerkin (dG) method works 
+                    over a trial space of functions that are only 
+                    piecewise continuous, and thus often comprise more 
+                    inclusive function spaces than the finite-dimensional 
+                    inner product subspaces utilized in conforming methods. 
+                    dG schemes are complex in their implementations and have 
+                    several applications in hyperbolic problems.</p>
+                    <a href="about.html">Learn More</a>
+
+            </div>
+            <div>
+                <h2>Isogeometric Analysis </h2>
+                <p>As a recently developed computational approach, it offers 
+                    the possibility of integrating finite element analysis 
+                    (FEA) into conventional NURBS-based Computer Aided Design 
+                    (CAD ) tools. Isogeometric Analysis (IGA) allows models to 
+                    be designed, tested and adjusted in one go, using a common 
+                    data set. The fundamental theories have been presented by 
+                    Hughes et al. (2005) and competes strongly with FEM in several 
+                    applications especially because it is an High Order scheme. </p>
+                   <a href="about.html">Learn More</a>
+           </div>
+           <div>
+            <h2>Optimal Control Methods</h2>
+            <p>Here, so far, we have studied and analyzed the optimal control of 
+                Mathematical epidemiology models. By using sensitivity analysis, 
+                we are also able to determine the economic value of each strategy 
+                used in the control. </p>
+               <a href="about.html">Learn More</a>
+               
+        </div>
+            
+        </div>
+        <div class="services-list">
+            <div>
+                 <h2>Surface Partial Differential Equations </h2>
+                 <p>The discretization of PDEs on surfaces started with the 
+                    use of surface finite elements to compute solutions to the 
+                    Poisson problem for the Laplace–Beltrami operator on a curved 
+                    surface proposed and analysed in Dziuk (find paper here). 
+                    The important concept is the use of triangulated surfaces on 
+                    which finite element spaces are constructed and then used in 
+                    variational formulations of surface PDEs using surface gradients. 
+                    My research interest involves using Isogeometric Analysis 
+                    (IgA) which have better approximation properties especially 
+                    with regards to representation of surfaces for discretization. </p>
+                    <a href="about.html">Learn More</a>
+            </div>
+            <div>
+                <h2> Space-Time Methods</h2>
+                <p>This approach to discretizing time-dependent 
+                    problems is considered to be a natural way of numerical discretization 
+                    for problems requiring deforming and moving meshes. The space-time schemes 
+                    allow for discretization in time and space simultaneously and are also applicable 
+                    even for unstructured meshes. Here, the time variable is also considered as just 
+                    another spatial variable. In this sense, the time derivative acts as a strong convection 
+                    term in the direction of the new spatial variable. In this direction, 
+                    we use Isogeometric Analysis (IGA) and FEM to present new ideas on solving 
+                    time-dependent problems.</p>
+                   <a href="about.html">Learn More</a>
+           </div>
+           <div>
+            <h2>Mathematical Epidemiology </h2>
+            <p>The understanding of the transmission dynamics of infectious diseases has been well-studied 
+                and researched in mathematics. These mathematical models have played a major role in increasing
+                the understanding of the underlying mechanisms which influence the spread of 
+                diseases and provide guidelines as to how the spread can be controlled. Here, we have studied the  </p>
+               <a href="https://en.wikipedia.org/wiki/Finite_element_method">Read More on Wiki</a>
+               
+        </div>
+            
+        </div>
+    </div>
+</div>
+<script>
+    var text = "Dr Stephen Edward Moore's research arease fall on mostly Mathematics and Computer Programming (Artificial Intelegence)";
+    var index = 0;
+    var speed = 50; // adjust the speed of typing here
+    
+    function type() {
+      if (index < text.length) {
+        document.getElementById("demo").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      }
+    }
+    
+    type();
+</script>
+
+
+    
+</body>
+</html> 

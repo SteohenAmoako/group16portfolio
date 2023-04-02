@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact-Page</title>
+</head>
+<style>
+    /* Style for contact-info */
+    .contact-info {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .contact-info strong {
+      font-weight: bold;
+    }
+    /* Style for form */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    form input[type="submit"] {
+      background-color: 0;
+      color: rgb(22, 24, 37);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    form input[type="submit"]:hover {
+      background-color: rgb(39, 39, 211);
+    }
+    
+  </style>
+<body>
+    <div id="header2" style="color:white;">
+        <div class="container">
+            <nav>
+              <p style="font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; color: #ff004f ;">CodeLink</p>
+
+                <img src="" class="logo">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="research.html">Research</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header2-text">
+            
+                 <h1>Dr. Stephen<span> Moore</span><br></h1>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p><strong>Private:</strong> <address>Post Office Box DL 625, Adisadel, Cape Coast, Ghana, West Africa</address></p>
+            <p><strong>Office:</strong>Department of Mathematics, University of Cape Coast, PMB, Cape Coast, Ghana</p>
+            <p><strong>Contact:</strong></p>
+            <p><a href="tel:+">Phone: +43-660-606-4199 / +233-20-471-4313</a> </p>
+            <p class="mailto" > <a  href="mailto:">Email: stephen.moore@ucc.edu.gh</a> </p>
+          </div>
+          <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  required>
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message" style="color:bl  ack">
+            <input type="submit" value="Submit" style=" width:40%;">
+          </form>
+         
+    </div>
+     
+      
+</body>
+</html>
