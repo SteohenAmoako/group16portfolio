@@ -3,10 +3,142 @@
     padding: 0;
     font-family: 'Poppins', sans-serif ;
     box-sizing: border-box;
-    
-   
-
 }
+
+/*----------------------------RESPONSIVENESSSSSSSSS----------------*/
+/* Default styles for all devices */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Styles for devices with a max width of 768px (tablets and smaller) */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 1rem 0;
+    }
+  }
+  
+  /* Styles for devices with a max width of 576px (phones and smaller) */
+  #menu:checked ~ nav ul {
+    display: block;
+  }
+  
+  @media (max-width: 576px) {
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      background-color: #333;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0.5rem;
+      margin-right: 1rem;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  
+    .menu-toggle:hover {
+      color: #ccc;
+    }
+  
+    nav ul {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: #333;
+    }
+  
+    nav ul li {
+      margin: 1rem 0;
+    }
+  
+    nav ul a {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  
+    #menu:checked ~ ul {
+      display: block;
+    }
+  }
+  
+/* Default styles for all devices */
+body {
+    font-size: 1rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for devices with a max width of 768px (tablets and smaller) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.875rem;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Styles for devices with a max width of 576px (phones and smaller) */
+  @media (max-width: 576px) {
+    body {
+      font-size: 0.75rem;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  /*---------------ENDDDD-------------RESPONSIVENESSSSSSSSS----------------*/
+  
 body{
     background: white;
     color: black;
